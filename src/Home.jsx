@@ -4,9 +4,7 @@ import React from 'react';
 import Card from './Card';
 
 const Home = () => {
-  const PAYMENT_HOST =
-    'https://bjywr0r8mk.execute-api.ap-south-1.amazonaws.com';
-
+  const PAYMENT_HOST = process.env.REACT_APP_PAYMENT_HOST;
   const checkoutHandler = async amount => {
     const {
       data: { key },

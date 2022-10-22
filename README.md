@@ -19,9 +19,7 @@ npm start
 
 ### Configure the API host
 
-Under `src/Home.jsx` - Change the value of PAYMENT_HOST
-
-Note: We will refactor these later.
+In the `.env` file, provide the `PAYMENT_HOST` value which would expose APIs for your Payment integration.
 
 ### Deploy to Cloud
 
