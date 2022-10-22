@@ -1,0 +1,13 @@
+service: serverless-payment-frontend
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'ap-south-1'}
+
+constructs:
+  react:
+    type: single-page-app
+    path: build
+
+plugins:
+  - serverless-lift
